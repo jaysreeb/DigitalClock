@@ -12,12 +12,26 @@ body{
     justify-content: center;
     align-items: center;
 }
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    border: 1px solid #f1ecef;
+    align-items: center;
+    height: 90px;
+    width: 350px;
+    border-radius: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f1ecef;
 
+}
 .container{
     height: 35%;
     width: 25%;
     display: grid;
-    grid-template-rows: 35% 65%;
+    grid-template: 35% 65%;
     align-items: center;
     justify-content: center;
     border: .3rem solid #f884c4;
@@ -47,7 +61,6 @@ h1{
     margin: 0 .5rem;
     width: 70%;
     height: 8rem;
-    align-items: center;
     color: #fff;
     background-color: #1a1a1a;
     position: relative;
@@ -100,6 +113,7 @@ h1{
     border-radius: 1rem;
     z-index: 1;
 }
+
 @media (max-width: 890px){
     .container{
         width: 60%;

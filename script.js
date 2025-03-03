@@ -3,8 +3,18 @@ window.onload = function(){
     const hour = document.getElementById('hour');
     const minute = document.getElementById('minute');
     const second = document.getElementById('second');
+    const quotes = document.getElementById('quotes');
 
     const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const quote = [
+        "Seize the day, then let it go",
+        "The future is something which everyone reaches at the rate of sixty minutes an hour",
+        "Time is a brisk wind, for each hour it brings something new.",
+        "Time moves slowly but passes quickly.",
+        "Everybody knows that once you passed it, you can’t go back.",
+        "But meanwhile, time flies; it flies never to be regained.",
+        "Those who make the worst use of their time are the first to complain of its brevity."
+    ];
 
     // Defining showTime funcion
     function showTime(){
@@ -23,6 +33,13 @@ window.onload = function(){
         minute.textContent = mint; // minutes
         second.textContent = sec; // seconds
     }
+    function updateQuote() {
+        const randomIndex = Math.floor(Math.random() * quote.length);
+        quotes.textContent = quote[randomIndex];
+        console.log(quote);
+    }
     showTime();
+    updateQuote();
     setInterval(showTime, 1000); //Updates every second
+    setInterval(updateQuote, 2000); //Quote changes every 2 seconds
 };
