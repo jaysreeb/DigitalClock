@@ -3,12 +3,14 @@
 This is a simple digital clock web application built using **HTML, CSS, and JavaScript**. It dynamically displays the current date and time, updating every second.
 
 ## Screenshots
+![alt text](image-1.png)
 ![alt text](image.png)
 
 ## Features
 - Displays the current date in the format: `Day Month Year` (e.g., 4 March 2025).
 - Shows the time with hours, minutes, and seconds, updating in real-time.
 - Uses JavaScript's `setInterval()` function to refresh the clock every second.
+- A quote is updated every 3 second in the clock.
 
 ## Technologies Used
 - **HTML** - Structure of the webpage.
@@ -36,6 +38,7 @@ The `script.js` file does the following:
 - Gets the current date and time using `new Date()`.
 - Updates the elements with the correct values every second.
 - Update the HTML DOM element text content.
+- A quote is updated every 3 seconds using the updateQuote() function
 
 ## Future Improvements
 - Add an AM/PM toggle for 12-hour format.

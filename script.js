@@ -36,10 +36,9 @@ window.onload = function(){
     function updateQuote() {
         const randomIndex = Math.floor(Math.random() * quote.length);
         quotes.textContent = quote[randomIndex];
-        console.log(quote);
     }
     showTime();
     updateQuote();
     setInterval(showTime, 1000); //Updates every second
-    setInterval(updateQuote, 2000); //Quote changes every 2 seconds
+    setInterval(updateQuote, 3000); //Updates the quote
 };
